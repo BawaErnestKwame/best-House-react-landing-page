@@ -1,9 +1,13 @@
-import React from 'react'
+// import React from 'react'
+// import Header from '../Header'
 
-const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+// const Home = () => {
+//   return (
+//     <div className='w-full h-screen z-0'>
+//       <Header/>
 
-export default Home
+//     </div>
+//   )
+// }
+
+// export default Home

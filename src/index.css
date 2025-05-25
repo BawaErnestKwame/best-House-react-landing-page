@@ -5,3 +5,12 @@ html {
   font-family: "Exo 2", sans-serif;
   
 }
+
+a.active{
+  color:orange;
+   border-bottom: 2px solid darkorange;
+ 
+
+}
+
+
