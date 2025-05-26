@@ -1,9 +1,13 @@
 import React from 'react'
 import header from './assets/header2.jpeg'
 import Navbar from './Navbar' // Import Navbar
+import TrustedClient from './Pages/TrustedClient'
+import Luxury from './Pages/Luxury'
 
 const Header = () => {
   return (
+
+    <>
 <div
   className="w-full h-screen bg-cover bg-center text-white px-4 sm:px-8 lg:px-24 pt-12 md:pt-16 lg:pt-24 relative"
   style={{
@@ -56,6 +60,11 @@ const Header = () => {
       </div>
       </div>
     </div>
+
+    <TrustedClient/>
+    <Luxury/>
+
+    </>
   )
 }
 

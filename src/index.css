@@ -14,3 +14,46 @@ a.active{
 }
 
 
+.animation-scroll{
+  animation: scroll 10s linear infinite;
+  width: max-content;
+  /* animation-play-state: paused; */
+
+  display: inline-flex;
+}
+
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0%);
+  }
+
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+
+.before_after::after {
+  content: "";
+  width: 5rem;
+  height: 100%;
+  background: linear-gradient(to left, white, transparent);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.before_after::before {
+  content: "";
+  width: 5rem;
+  height: 100%;
+  background: linear-gradient(to right, white, transparent);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  pointer-events: none;
+}
