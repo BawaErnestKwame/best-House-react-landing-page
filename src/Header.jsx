@@ -5,6 +5,7 @@ import TrustedClient from './Pages/TrustedClient'
 import Luxury from './Pages/Luxury'
 import ConfortSection from './Pages/ConfortSection'
 import ExpectGuides from './Pages/ExpectGuides'
+import RequirementSection from './Pages/RequirementSection'
 
 const Header = () => {
   return (
@@ -67,6 +68,7 @@ const Header = () => {
     <Luxury/>
     <ExpectGuides/>
     <ConfortSection/>
+    <RequirementSection/>
 
     </>
   )
