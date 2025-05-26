@@ -3,6 +3,8 @@ import header from './assets/header2.jpeg'
 import Navbar from './Navbar' // Import Navbar
 import TrustedClient from './Pages/TrustedClient'
 import Luxury from './Pages/Luxury'
+import ConfortSection from './Pages/ConfortSection'
+import ExpectGuides from './Pages/ExpectGuides'
 
 const Header = () => {
   return (
@@ -63,6 +65,8 @@ const Header = () => {
 
     <TrustedClient/>
     <Luxury/>
+    <ExpectGuides/>
+    <ConfortSection/>
 
     </>
   )
