@@ -6,6 +6,7 @@ import Luxury from './Pages/Luxury'
 import ConfortSection from './Pages/ConfortSection'
 import ExpectGuides from './Pages/ExpectGuides'
 import RequirementSection from './Pages/RequirementSection'
+import InsightSection from './Pages/InsightSection'
 
 const Header = () => {
   return (
@@ -69,6 +70,7 @@ const Header = () => {
     <ExpectGuides/>
     <ConfortSection/>
     <RequirementSection/>
+    <InsightSection/>
 
     </>
   )
