@@ -8,6 +8,7 @@ import ExpectGuides from './Pages/ExpectGuides'
 import RequirementSection from './Pages/RequirementSection'
 import InsightSection from './Pages/InsightSection'
 import Accordion from './Pages/Accordion'
+import TestimonialsSection from './Pages/TestimonialsSection'
 
 const Header = () => {
   return (
@@ -72,8 +73,8 @@ const Header = () => {
     <ConfortSection/>
     <RequirementSection/>
     <InsightSection/>
-
     <Accordion/>
+    <TestimonialsSection/>
 
     </>
   )
