@@ -22,6 +22,11 @@ a.active{
   display: inline-flex;
 }
 
+hr{
+  background-color: gray;
+  height: .5px;
+}
+
 
 @keyframes scroll {
   0%{

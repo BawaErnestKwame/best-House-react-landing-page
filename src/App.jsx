@@ -7,6 +7,7 @@ import Service from "./Components/Service"
 import Product from "./Components/Product"
 import Contact from "./Components/Contact"
 import Header from './Header';
+import Footer from './Pages/Footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Route path='/Product' element={<Product/>} />
       <Route path='/Contact' element={<Contact/>} />
     </Routes>
+    <Footer/>
 
     </div>
   )
