@@ -16,7 +16,7 @@ const Footer = () => {
                  <p className='text-white text-sm mt-3'> Discover your dream property with our easy-to-use real estate Platform. Browse Listings, Compare Price and connect with trusted agents in one place </p>
             </div>
 
-            <div className=" flex gap-16 flex-wrap">
+            <div className=" flex gap-16 flex-wrap relative">
                 <div className=" flex flex-col">
                     <h1>PAGES</h1>
 

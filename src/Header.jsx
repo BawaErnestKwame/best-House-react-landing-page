@@ -29,7 +29,7 @@ const Header = () => {
       <div className="mt-20">
         <h1 className="text-5xl font-bold mb-4 leading-15">
           EXCEPTIONAL HOMES FOR<br />
-          EXCEPTIONAL LIVES
+          EXCEPTIONAL LIVES <span className=' animate-pulse'>🏡</span>
         </h1>
         <p className="text-lg max-w-xl mb-8">
           Discover your dream with our easy-to-use real estate platform.
