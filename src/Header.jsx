@@ -1,14 +1,14 @@
 import React from 'react'
 import header from './assets/header2.jpeg'
 import Navbar from './Navbar' // Import Navbar
-import TrustedClient from './Pages/TrustedClient'
-import Luxury from './Pages/Luxury'
-import ConfortSection from './Pages/ConfortSection'
-import ExpectGuides from './Pages/ExpectGuides'
-import RequirementSection from './Pages/RequirementSection'
-import InsightSection from './Pages/InsightSection'
-import Accordion from './Pages/Accordion'
-import TestimonialsSection from './Pages/TestimonialsSection'
+import TrustedClient from './Components/TrustedClient'
+import Luxury from './Components/Luxury'
+import ConfortSection from './Components/ConfortSection'
+import ExpectGuides from './Components/ExpectGuides'
+import RequirementSection from './Components/RequirementSection'
+import InsightSection from './Components/InsightSection'
+import Accordion from './Components/Accordion'
+import TestimonialsSection from './Components/TestimonialsSection'
 
 const Header = () => {
   return (

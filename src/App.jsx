@@ -2,12 +2,12 @@ import React from 'react'
 import Navbar from './Navbar';
 import { Route, Routes } from 'react-router-dom';
 
-import About from "./Components/About"
-import Service from "./Components/Service"
-import Product from "./Components/Product"
-import Contact from "./Components/Contact"
+import About from "./Pages/About"
+import Service from "./Pages/Service"
+import Product from "./Pages/Product"
+import Contact from "./Pages/Contact"
 import Header from './Header';
-import Footer from './Pages/Footer';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
