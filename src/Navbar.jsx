@@ -1,35 +1,59 @@
-
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import ListIcon from '@mui/icons-material/List';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <>
-      <nav className='w-full h-16 px-24 items-center flex justify-between bg-blue-950 fixed top-0 right-0 left-0 mx-auto z-50 py-4 tracking-[0.05em]'>
-        <div className=" flex items-center">
-          <h1 className=' font-bold text-xl cursor-pointer text-white'>ESTATE<span className=' text-orange-500'>HOUSE</span></h1>
+      <nav className='w-full h-16 px-6 md:px-24 flex justify-between items-center bg-blue-950 fixed top-0 z-50 tracking-[0.05em]'>
+
+        {/* Logo */}
+        <div className="text-white font-bold text-xl cursor-pointer">
+          ESTATE<span className='text-orange-500'>HOUSE</span>
         </div>
- 
-        <ul className=' flex text-white gap-8 leading-[1.75] text-sm'>
-          <NavLink to="/"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>HOME</a></li></NavLink>
-          <NavLink to="./About"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>ABOUT</a></li></NavLink>
-          <NavLink to="./Service"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>SERVICE</a></li></NavLink>
-          <NavLink to="./FindAgent"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>FIND AGENT</a></li></NavLink>
-          <NavLink to="./Contact"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>CONTACT</a></li></NavLink>
-         
-       
-      
+
+        {/* Desktop Menu */}
+        <ul className='hidden md:flex gap-8 text-white text-sm'>
+          <NavLink to="/" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>HOME</li></NavLink>
+          <NavLink to="/About" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>ABOUT</li></NavLink>
+          <NavLink to="/Service" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>SERVICE</li></NavLink>
+          <NavLink to="/FindAgent" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>FIND AGENT</li></NavLink>
+          <NavLink to="/Contact" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>CONTACT</li></NavLink>
         </ul>
 
-        <div className=" flex text-white items-center text-sm">
-          <button className=' border border-orange-500 px-6 tracking-[0.05em] py-1 text-sm rounded-lg cursor-pointer'>LOGIN</button>
+        {/* Desktop Login Button */}
+        <div className="hidden md:flex">
+          <button className='border border-orange-500 px-6 py-1 rounded-lg text-white text-sm cursor-pointer'>LOGIN</button>
         </div>
 
-
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden text-white cursor-pointer z-50" onClick={toggleMenu}>
+          {menuOpen ? <CloseIcon /> : <ListIcon />}
+        </div>
       </nav>
 
+      {/* Mobile Menu Dropdown */}
+      {menuOpen && (
+        <div className="md:hidden fixed top-16 left-0 w-full bg-blue-950 px-6 py-4 z-40">
+          <ul className="flex flex-col gap-4 text-white text-base">
+            <NavLink to="/" onClick={closeMenu}><li className='hover:text-orange-400'>HOME</li></NavLink>
+            <NavLink to="/About" onClick={closeMenu}><li className='hover:text-orange-400'>ABOUT</li></NavLink>
+            <NavLink to="/Service" onClick={closeMenu}><li className='hover:text-orange-400'>SERVICE</li></NavLink>
+            <NavLink to="/FindAgent" onClick={closeMenu}><li className='hover:text-orange-400'>FIND AGENT</li></NavLink>
+            <NavLink to="/Contact" onClick={closeMenu}><li className='hover:text-orange-400'>CONTACT</li></NavLink>
+            <button className='mt-2 border border-orange-500 px-4 py-2 rounded-lg text-white text-sm'>LOGIN</button>
+          </ul>
+        </div>
+      )}
     </>
   )
 }
 
-export default Navbar
+export default Navbar;
