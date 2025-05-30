@@ -27,7 +27,7 @@ const Header = () => {
     
       {/* MAIN CONTENT */}
       <div className="mt-20">
-        <h1 className="text-5xl font-bold mb-4 leading-15">
+        <h1 className=" text-3xl md:text-5xl font-bold mb-4 leading-15">
           EXCEPTIONAL HOMES FOR<br />
           EXCEPTIONAL LIVES <span className=' animate-pulse'>🏡</span>
         </h1>

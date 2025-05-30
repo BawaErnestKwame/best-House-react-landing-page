@@ -1,5 +1,13 @@
 import React from 'react'
 import aboutimg from '../assets/aboutimg6.jpeg'
+import team1 from '../assets/team1.jpeg'
+import team2 from '../assets/team2.jpeg'
+import team3 from '../assets/team3.jpeg'
+import team4 from '../assets/team4.jpeg'
+import team5 from '../assets/contactimg.jpeg'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
+
 
 const About = () => {
   return (
@@ -71,7 +79,7 @@ const About = () => {
 
           
 
-          <div className="flex flex-col px-4 md:px-8 lg:px-24 pb-12 pt-12 mt-20 items-center align-middle ">
+          <div className="flex flex-col px-4 md:px-8 lg:px-24 pb-12 pt-12 mt-20 items-center align-middle bg-gray-100 ">
 
             <h1 className='mb-3 text-3xl text-gray-900 font-bold'>OUR STORY</h1>
               <p className='text-center md:w-[70%] text-base text-gray-700'>At EstateHouse, our story began with a simple idea to make real estate easier, more transparent, and accessible for everyone.
@@ -79,7 +87,79 @@ const About = () => {
               What started as a small vision quickly grew into a trusted platform helping individuals and families find their dream homes. Driven by a passion for people and property, we set out to connect buyers, sellers, and agents in a way that feels seamless and secure.
 
               Over the years, we’ve built strong relationships with our clients by staying true to our values: integrity, trust, and excellence. We've grown with the communities we serve, adapting to change and embracing innovation all while keeping people at the heart of what we do.</p>
+
           </div>
+
+          {/* our expects */}
+
+          <div className=" flex flex-col px-4 md:px-8 lg:px-24 pb-12 pt-12 mt-15 items-center">
+            <h1 className=' font-bold text-gray-900 mb-6 text-2xl'>OUR AGENTS</h1>
+            <div className=" bg-gray-50 p-8  flex gap-8 rounded-2xl border-t-4 border-orange-600 shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)]">
+
+              <div className="flex flex-col items-center text-center">
+                <img src={team1} alt="" className=' w-15 h-15 rounded-full align-middle '/>
+                <div className="">
+                  <h2 className=' font-bold'>Danial Redcliff</h2>
+                  <p>Founder & CEO of Estate</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center text-center">
+                <img src={team2} alt="" className=' w-15 h-15 rounded-full align-middle '/>
+                <div className="">
+                  <h2 className=' font-bold'>Danial Redcliff</h2>
+                  <p>Founder & CEO of Estate</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center text-center">
+                <img src={team4} alt="" className=' w-15 h-15 rounded-full align-middle '/>
+                <div className="">
+                  <h2 className=' font-bold'>Danial Redcliff</h2>
+                  <p>Founder & CEO of Estate</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center text-center">
+                <img src={team3} alt="" className=' w-15 h-15 rounded-full align-middle '/>
+                <div className="">
+                  <h2 className=' font-bold'>Danial Redcliff</h2>
+                  <p>Founder & CEO of Estate</p>
+                </div>
+              </div>
+
+
+            </div>
+
+            <button className='bg-orange-500 text-white py-2 px-4 cursor-pointer rounded mt-4 flex items-center gap-2 hover:bg-orange-600 transition-colors shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)]'>Find More Agents <ArrowForwardIcon/></button>
+          </div>
+
+          {/* find your dream home faster */}
+<div className="w-full mt-16 py-12 px-4 md:px-8 lg:px-24 h-screen mb-12 flex items-center justify-center text-center">
+  <div
+    className="w-full h-full flex items-center justify-center text-white rounded-lg p-8"
+    style={{
+      backgroundImage: `linear-gradient(to top, rgba(23, 37, 84, 0.9), transparent), url(${team5})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }}
+  >
+    <div className="max-w-2xl flex flex-col  justify-center items-center">
+      <h1 className="text-4xl font-bold mb-4 ">Find Your Your Dream Home Faster</h1>
+      <p className="text-lg leading-relaxed">
+        EstateHouse was founded with a vision to make real estate simple, trusted, and accessible. From connecting buyers to trusted agents to showcasing verified properties, we aim to make every housing journey smooth and meaningful.
+      </p>
+
+          <button className='bg-orange-500  text-white py-2 px-4 cursor-pointer rounded mt-8 flex items-center gap-2 hover:bg-orange-600 transition-colors shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)]'>Search Now<ArrowForwardIcon/></button>
+      
+
+     
+    </div>
+  </div>
+</div>
+
+
+
     </>
   )
 }
