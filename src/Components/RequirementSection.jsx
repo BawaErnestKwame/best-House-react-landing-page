@@ -15,7 +15,7 @@ const RequirementSection = () => {
       
      
         <div className=" w-full md:w-full grid md:grid-cols-2 lg:grid-cols-3 items-center content-center text-center gap-4 lg:w-[80%]">
-            <div className=" bg-gray-100 p-8 rounded-xl w-full h-60 md:w-70 sshadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)] hover:border-2 hover:border-gray-400 transition-all">
+            <div className=" bg-gray-100 p-8 rounded-xl w-full h-60 md:w-70 shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)] hover:border-2 hover:border-gray-400 transition-all">
                 <WifiIcon className='text-orange-500 mb-4'/>
                 <h1 className='font-bold text-xl mb-4'>Free Wi-Fi</h1>
                 <p className='text-gray-500'>Stay Connected Anytime, Anywhere</p>

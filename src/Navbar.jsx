@@ -14,7 +14,7 @@ const Navbar = () => {
           <NavLink to="/"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>HOME</a></li></NavLink>
           <NavLink to="./About"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>ABOUT</a></li></NavLink>
           <NavLink to="./Service"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>SERVICE</a></li></NavLink>
-          <NavLink to="./Product"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>PRODUCT</a></li></NavLink>
+          <NavLink to="./FindAgent"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>FIND AGENT</a></li></NavLink>
           <NavLink to="./Contact"> <li className=' hover:text-orange-400 transition-all cursor-pointer'><a>CONTACT</a></li></NavLink>
          
        

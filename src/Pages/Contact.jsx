@@ -1,6 +1,8 @@
 import React from 'react'
 import contact from '../assets/contactimg.jpeg'
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 
 const Contact = () => {
@@ -19,9 +21,9 @@ const Contact = () => {
   </div>
 </div>
 
-<div className="py-12 flex flex-col md:flex-row flex-wrap px-8 md:px-16 lg:px-24 w-full bg-gray-200 ">
+<div className="py-12 flex flex-col md:flex-row px-8 md:px-16 lg:px-24 w-full bg-gray-100 gap-15 content-center justify-center">
   {/* contact */}
-  <div className="md:w-1/3 w-full mb-6 md:mb-0">
+  <div className="md:w-1/2 w-full mb-6 md:mb-0 bg-gray-200 p-6 rounded-2xl shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)] hover:border-2 hover:border-gray-400 transition-all">
     <h1 className='font-bold text-3xl text-blue-950 mb-2'>LET'S GET IN TOUCH</h1>
     <h2 className='text-gray-600 text-base mb-4'>We love to hear from you. Our friendly team is here to chat.</h2>
 
@@ -38,29 +40,56 @@ const Contact = () => {
 
     <div className="flex gap-3 items-center">
       <div className="text-white w-10 h-10 rounded-full bg-orange-400 flex items-center justify-center text-sm border border-blue-900">
-        <ContactMailIcon />
+        <LocalPhoneIcon />
       </div>
       <div>
-        <h1 className='font-bold'>Address</h1>
-        <p className="text-gray-600">Ahyiresu Post Office 119</p>
+        <h1 className='font-bold'>phone</h1>
+        <p className="text-gray-600">+233599316218</p>
       </div>
     </div>
 
     <div className="flex gap-3 items-center">
       <div className="text-white w-10 h-10 rounded-full bg-orange-400 flex items-center justify-center text-sm border border-blue-900">
-        <ContactMailIcon />
+        <EmailIcon/>
       </div>
       <div>
-        <h1 className='font-bold'>Address</h1>
-        <p className="text-gray-600">Ahyiresu Post Office 119</p>
+        <h1 className='font-bold'>E-mail</h1>
+        <p className="text-gray-600">bawaernest926@gmail.com</p>
       </div>
     </div>
     </div>
   </div>
 
   {/* form section */}
-  <div className="md:w-2/3 w-full">
+  <div className="md:w-1/2 w-full">
     {/* Form will go here */}
+    <h1 className=' text-blue-950 font-bold mb-4 text-2xl'>CONTACT BY FILLING THIS FORM</h1>
+
+    <form action="" className=' flex flex-col gap-4'>
+      <div className="">
+        <label className='text-gray-600'>Name:</label>
+        <input type="text" placeholder='Enter your Name...' className='w-full outline-none border-1 border-orange-500 p-2 placeholder:text-base mt-2 rounded cursor-pointer
+             hover:border-blue-900 transition-colors hover:shadow
+        ' />
+      </div>
+      <div className="">
+        <label className='text-gray-600'>Contact:</label>
+        <input type="phone" placeholder='Enter your phone...' className='w-full outline-none border-1 border-orange-500 p-2 placeholder:text-base mt-2 rounded cursor-pointer
+             hover:border-blue-900 transition-colors hover:shadow
+        ' />
+      </div>
+      <div className="">
+        <label className='text-gray-600'>Email:</label>
+        <input type="email" placeholder='Enter your email...' className='w-full outline-none border-1 border-orange-500 p-2 placeholder:text-base mt-2 rounded cursor-pointer 
+        hover:border-blue-900 transition-colors hover:shadow' />
+      </div>
+
+      <button className=' text-white bg-blue-900 px-4 py-2 rounded-xl outline-none w-30 text-base hover:bg-blue-700 transition-all hover:shadow'>Submit...</button>
+
+    
+    </form>
+
+
   </div>
 </div>
 
