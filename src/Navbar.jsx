@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import ListIcon from '@mui/icons-material/List';
 import CloseIcon from '@mui/icons-material/Close';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,11 +22,11 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex gap-8 text-white text-sm'>
-          <NavLink to="/" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>HOME</li></NavLink>
-          <NavLink to="/About" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>ABOUT</li></NavLink>
-          <NavLink to="/Service" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>SERVICE</li></NavLink>
-          <NavLink to="/FindAgent" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>FIND AGENT</li></NavLink>
-          <NavLink to="/Contact" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>CONTACT</li></NavLink>
+          <NavLink to="/" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>HOME <NavigateNextIcon/> </li></NavLink>
+          <NavLink to="/About" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>ABOUT<NavigateNextIcon/> </li></NavLink>
+          <NavLink to="/Service" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>SERVICE<NavigateNextIcon/> </li></NavLink>
+          <NavLink to="/FindAgent" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>FIND AGENT <NavigateNextIcon/> </li></NavLink>
+          <NavLink to="/Contact" onClick={closeMenu}><li className='hover:text-orange-400 cursor-pointer'>CONTACT <NavigateNextIcon/> </li></NavLink>
         </ul>
 
         {/* Desktop Login Button */}

@@ -28,6 +28,7 @@ import room1 from '../assets/room9.jpeg';
 import room2 from '../assets/room10.jpeg';
 import room3 from '../assets/roo11.jpeg';
 import room4 from '../assets/room12.jpeg';
+import board from '../assets/board1.jpeg';
 
 
 
@@ -295,6 +296,30 @@ const Service = () => {
     </div>
   </div>
 </div>
+
+<div className="w-full bg-blue-950 text-white px-4 md:px-8 lg:px-24 py-12 flex flex-col md:flex-row items-center justify-between gap-8 mb-12 mt-14">
+  {/* Left Content */}
+  <div className="md:w-1/2">
+    <h1 className="text-3xl md:text-4xl font-bold mb-5">Have A Question?</h1>
+    <h2 className="text-xl font-semibold mb-4">Our Team Is Here To Assist You</h2>
+    <p className="text-base text-gray-200">
+      Ask about our estate products, processes, or anything else. Our highly trained reps are standing by to help you out, so feel free to reach out anytime.
+    </p>
+
+     <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-lg transition duration-300 m-6">
+    Contact
+  </button>
+ <button> <p>Or Call +233599316218</p></button>
+
+
+  </div>
+
+  {/* Right Image */}
+  <div className="md:w-1/3">
+    <img src={board} alt="Support Team" className="w-full h-auto object-contain rounded-lg shadow-lg" />
+  </div>
+</div>
+
 
 
     </>
