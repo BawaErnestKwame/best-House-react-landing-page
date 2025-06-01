@@ -7,7 +7,7 @@ import PercentIcon from '@mui/icons-material/Percent';
 const ExpectGuides = () => {
   return (
     <div>
-        <div className=" flex items-center content-center px-4 md:px-16 lg:px-24 flex-col">
+        <div className=" flex items-center content-center px-4 md:px-8 lg:px-24 flex-col">
             <h2 className=' text-2xl mb-8 font-bold w-80 text-center '>Expect Guides To Find Your Perfect Fit </h2>
             <div className="flex  flex-col w-full md:flex-row gap-4">
                 <div className=" bg-gray-200 p-4 border-gray-300 rounded-2xl shadow-[0px_18px_10px_-19px_rgba(0,0,0,0.74)] border-2 transform hover:-translate-y-3 hover:border-4 transition-all transform-3d">

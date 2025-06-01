@@ -41,9 +41,9 @@ const About = () => {
 
   
 
-          <div className=" flex flex-col px-4 md:px-8 lg:px-24 pb-12 pt-12 mt-20 items-center content-center bg-gray-100">
+          <div className=" flex flex-col w-full  px-4 md:px-8 lg:px-24 pb-12 pt-12 mt-20 items-center content-center bg-gray-100">
             {/* works percentage and others  */}
-            <div className=" flex justify-between md:flex-row w-[80%] mb-12">
+            <div className=" flex justify-between flex-wrap gap-4 md:flex-row w-[80%] mb-12">
               <div className="">
             <h1 className='font-bold text-4xl text-gray-900 border-b-3 border-orange-600 p-1 mb-3'>    8.9%</h1>
             <p className='text-gray-600 text-base'>Profit Return</p>
@@ -94,7 +94,7 @@ const About = () => {
 
           <div className=" flex flex-col px-4 md:px-8 lg:px-24 pb-12 pt-12 mt-15 items-center">
             <h1 className=' font-bold text-gray-900 mb-6 text-2xl'>OUR AGENTS</h1>
-            <div className=" bg-gray-50 p-8  flex gap-8 rounded-2xl border-t-4 border-orange-600 shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)]">
+            <div className=" bg-gray-50 p-8  flex flex-wrap justify-center gap-8 rounded-2xl border-t-4 border-orange-600 shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)]">
 
               <div className="flex flex-col items-center text-center">
                 <img src={team1} alt="" className=' w-15 h-15 rounded-full align-middle '/>

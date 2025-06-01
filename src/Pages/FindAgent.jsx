@@ -7,7 +7,7 @@ const FindAgent = () => {
   return (
 
     <>
-    <div className=' w-full flex px-8 md:px-16 lg:px-24 mt-15 h-auto py-8'>
+    <div className=' w-full flex px-4 md:px-8 lg:px-24 mt-15 h-auto py-8'>
       <div className=" w-full flex flex-col md:flex-row bg-gray-200 p-8 rounded-2xl gap-12">
         {/* content goes here  */}
         <div className="">
@@ -42,7 +42,7 @@ const FindAgent = () => {
 
        {/* place for selling */}
 
-      <div className=" w-full px-8 md:px-16 lg:px-24 pb-12 items-center justify-center content-center h-auto mt-8 mx-auto">
+      <div className=" w-full px-4 md:px-8 lg:px-24 pb-12 items-center justify-center content-center h-auto mt-8 mx-auto">
         <h1 className='text-gray-800 font-bold text-3xl mb-2'>Selling Your Place?</h1>
         <p className='text-gray-600'>Compare real estate agents before you’re sold on one.</p>
         <div className=" flex flex-wrap gap-4  w-full">

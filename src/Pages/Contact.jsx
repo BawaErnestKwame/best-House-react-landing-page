@@ -8,7 +8,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 const Contact = () => {
   return (
     <>
-<div className='w-full h-[40vh] mt-10 px-8 md:px-16 lg:px-24 flex items-center justify-center text-center'
+<div className='w-full h-[40vh] mt-10 px-4 md:px-8 lg:px-24 flex items-center justify-center text-center'
   style={{
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(${contact})`,
     backgroundSize: 'cover',
@@ -21,7 +21,7 @@ const Contact = () => {
   </div>
 </div>
 
-<div className="py-12 flex flex-col md:flex-row px-8 md:px-16 lg:px-24 w-full bg-gray-100 gap-15 content-center justify-center">
+<div className="py-12 flex flex-col md:flex-row px-4 md:px-8 lg:px-24 w-full bg-gray-100 gap-15 content-center justify-center">
   {/* contact */}
   <div className="md:w-1/2 w-full mb-6 md:mb-0 bg-gray-200 p-6 rounded-2xl shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)] hover:border-2 hover:border-gray-400 transition-all">
     <h1 className='font-bold text-3xl text-blue-950 mb-2'>LET'S GET IN TOUCH</h1>
