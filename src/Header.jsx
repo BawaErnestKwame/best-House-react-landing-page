@@ -9,8 +9,15 @@ import RequirementSection from './Components/RequirementSection'
 import InsightSection from './Components/InsightSection'
 import Accordion from './Components/Accordion'
 import TestimonialsSection from './Components/TestimonialsSection'
+import { motion } from "framer-motion";
+
 
 const Header = () => {
+
+  const fadeIn ={
+    hidden:{opacity: 0 , y:-800},
+    visible:{opacity: 1 , y:0}
+  }
   return (
 
     <>
@@ -26,7 +33,24 @@ const Header = () => {
 
     
       {/* MAIN CONTENT */}
-      <div className="mt-20">
+      <motion.div className="mt-20"
+   
+
+      
+      
+      >
+        <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        animate="visible"
+        transition={{
+          type:"spring",
+          stiffness:50,
+          damping:10,
+
+        }}
+        
+        >
         <h1 className=" text-3xl md:text-5xl font-bold mb-4 leading-15">
           EXCEPTIONAL HOMES FOR<br />
           EXCEPTIONAL LIVES <span className=' animate-pulse'>🏡</span>
@@ -36,12 +60,32 @@ const Header = () => {
           <br />
           Browse listings, compare prices, and connect with trusted agents—all in one place.
         </p>
+        </motion.div>
 
-        <div className="flex gap-4">
+        <motion.div className="flex gap-4"
+        initial={{
+
+          opacity:0,
+          y:200
+        }}
+
+        animate={{
+          opacity:1,
+          y:0
+         
+        }}
+
+        transition={{
+          type:"spring",
+          stiffness:50,
+          damping:10
+        }}
+        
+        >
           <button className='bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg text-white font-medium'>Browse Now</button>
           <button className='border border-white px-6 py-2 rounded-lg text-white font-medium hover:bg-amber-50 hover:text-gray-950'>See Details</button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* descriptions  */}
 
