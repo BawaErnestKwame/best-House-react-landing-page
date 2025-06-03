@@ -3,27 +3,37 @@ import contact from '../assets/contactimg.jpeg'
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import { motion } from 'framer-motion';
 
 
 const Contact = () => {
   return (
     <>
-<div className='w-full h-[40vh] mt-10 px-4 md:px-8 lg:px-24 flex items-center justify-center text-center'
+<motion.div className='w-full h-[40vh] mt-10 px-4 md:px-8 lg:px-24 flex items-center justify-center text-center'
   style={{
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(${contact})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }}
+ initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
 >
   <div className="text-white w-full md:w-1/2">
     <h1 className='font-bold text-3xl mb-4'>CONTACT US</h1>
     <p className='text-base tracking-wide'>If you’re looking for a new home, an investment property or to explore the area we’ll help you find exactly what you’re looking for.</p>
   </div>
-</div>
+</motion.div>
 
-<div className="py-12 flex flex-col md:flex-row px-4 md:px-8 lg:px-24 w-full bg-gray-100 gap-15 content-center justify-center">
+<div className="py-20 flex flex-col md:flex-row px-4 md:px-8 lg:px-24 w-full bg-gray-100 gap-15 content-center justify-center">
   {/* contact */}
-  <div className="md:w-1/2 w-full mb-6 md:mb-0 bg-gray-200 p-6 rounded-2xl shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)] hover:border-2 hover:border-gray-400 transition-all">
+  <motion.div className="md:w-1/2 w-full mb-6 md:mb-0 bg-gray-200 p-6 rounded-2xl shadow-[0px_18px_10px_-22px_rgba(0,0,0,0.74)] hover:border-2 hover:border-gray-400 transition-all"
+   initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay:.5 }}
+
+  
+  >
     <h1 className='font-bold text-3xl text-blue-950 mb-2'>LET'S GET IN TOUCH</h1>
     <h2 className='text-gray-600 text-base mb-4'>We love to hear from you. Our friendly team is here to chat.</h2>
 
@@ -58,10 +68,16 @@ const Contact = () => {
       </div>
     </div>
     </div>
-  </div>
+  </motion.div>
 
   {/* form section */}
-  <div className="md:w-1/2 w-full">
+  <motion.div className="md:w-1/2 w-full"
+
+   initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay:1 }}
+  
+  >
     {/* Form will go here */}
     <h1 className=' text-blue-950 font-bold mb-4 text-2xl'>CONTACT BY FILLING THIS FORM</h1>
 
@@ -90,7 +106,7 @@ const Contact = () => {
     </form>
 
 
-  </div>
+  </motion.div>
 </div>
 
 
