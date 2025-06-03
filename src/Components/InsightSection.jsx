@@ -4,11 +4,28 @@ import room2 from '../assets/room2.jpeg'
 import room3 from '../assets/room3.jpeg'
 import room4 from '../assets/room4.jpeg'
 import room5 from '../assets/room5.jpeg'
+import { motion } from 'framer-motion';
 
 
 const InsightSection = () => {
   return (
-    <div className=' flex w-full px-8 md:px-16 lg:px-24 items-center overflow-hidden flex-col mb-10 pt-15'>
+    <motion.div className=' flex w-full px-8 md:px-16 lg:px-24 items-center overflow-hidden flex-col mb-10 pt-15'
+    
+                initial={{
+        opacity:0, x:-200,
+        }}
+
+        whileInView={{
+        opacity:1, x:0,
+        }}
+
+        transition={{
+          type:"spring",
+          stiffness:60, 
+          damping:10
+         }}>
+
+
         <h2 className=' text-orange-500 font-bold underline'>INSIGHT</h2>
         <h1 className=' text-2xl mb-10 font-bold text-center'> Explore Insight And Innovation,<br/> Uncover The Latest </h1>
         <div className=" flex gap-4  w-full lg:w-[80%] flex-col lg:flex-row">
@@ -43,13 +60,14 @@ const InsightSection = () => {
                 <p className='text-gray-600'>Planning for coaching, especially for users with different height and needs... </p>
                 <button className='text-gray-600 underline hover:text-blue-800 transition-colors'>Read More </button>
                </div>
+               
             </div>
 
             
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 
-export default InsightSection
+export default InsightSection;

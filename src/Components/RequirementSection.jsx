@@ -5,10 +5,27 @@ import AcUnitIcon from '@mui/icons-material/AcUnit';
 import PoolIcon from '@mui/icons-material/Pool';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import { motion } from 'framer-motion';
+
 
 const RequirementSection = () => {
   return (
-    <div className='fle flex-col items-center content-center w-full px-8 md:px-16 lg:px-24 text-center py-24 place-content-center'>
+    <motion.div className='fle flex-col items-center content-center w-full px-8 md:px-16 lg:px-24 text-center py-24 place-content-center'
+    initial={{
+        opacity:0, y:200,
+    }}
+
+    whileInView={{
+        opacity:1, y:0,
+    }}
+
+    transition={{
+        duration: .8
+    }}
+
+
+    
+    >
         <h1 className='font-bold mb-8 text-2xl'>Everything You Need </h1>
 
         <div className=" flex w-full items-center content-center justify-center">
@@ -55,7 +72,7 @@ const RequirementSection = () => {
         </div>
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 

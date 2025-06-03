@@ -12,11 +12,27 @@ import client10 from '../assets/pngwing10.png'
 import client11 from '../assets/pngwing11.png'
 import client12 from '../assets/pngwing12.png'
 import client13 from '../assets/pngwing13.png'
+import { motion } from 'framer-motion';
 
 
 const TrustedClient = () => {
   return (
-    <div className='w-full relative py-12 px-4 md:px-8 lg:px-24 flex flex-col items-center justify-center overflow-hidden'>
+    <motion.div className='w-full relative py-12 px-4 md:px-8 lg:px-24 flex flex-col items-center justify-center overflow-hidden'
+
+          initial={{
+        opacity:0, y:100,
+                 }}
+
+      whileInView={{
+        opacity:1,
+        y:0
+      }}
+
+      transition={{
+        duration:0.8,
+      }}
+    
+    >
 
       {/* our trusted-clients */}
         <div className=" flex flex-col items-center">
@@ -64,7 +80,7 @@ const TrustedClient = () => {
 
 
 
-    </div>
+    </motion.div>
   )
 }
 

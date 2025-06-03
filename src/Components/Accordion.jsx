@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { frequentFql } from './data';
-// ❌ Remove this line
-// import Accordion from './Accordion';
+import { motion } from 'framer-motion';
+
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -12,6 +12,23 @@ const Accordion = () => {
 
   return (
     <section className="flex justify-center w-full px-6  bg-gray-100 h-screen flex-col items-center mt-20">
+
+      <motion.div className="w-full justify-center items-center h-auto flex flex-col"
+
+                     initial={{
+        opacity:0, y:100,
+        }}
+
+        whileInView={{
+        opacity:1, y:0,
+        }}
+
+        transition={{
+        duration: 1
+         }}
+      
+      
+      >
 
         <h1 className=' font-bold text-2xl mb-2'> GENERAL FREQUENTLY ASKED QUESTIONS</h1>
         <p className="text-gray-600 text-base mb-4 ">This where the all the answers to your questions Are</p>
@@ -36,6 +53,7 @@ const Accordion = () => {
           </div>
         ))}
       </div>
+      </motion.div>
     </section>
   );
 };

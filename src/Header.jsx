@@ -12,6 +12,7 @@ import TestimonialsSection from './Components/TestimonialsSection'
 import { motion } from "framer-motion";
 
 
+
 const Header = () => {
 
   const fadeIn ={
@@ -46,8 +47,12 @@ const Header = () => {
         transition={{
           type:"spring",
           stiffness:50,
-          damping:10,
+          damping:15,
 
+        }}
+
+        viewport={{
+          once:false, amount:.8,
         }}
         
         >
@@ -64,23 +69,20 @@ const Header = () => {
 
         <motion.div className="flex gap-4"
         initial={{
-
           opacity:0,
           y:200
         }}
-
         animate={{
           opacity:1,
           y:0
-         
         }}
-
         transition={{
           type:"spring",
           stiffness:50,
           damping:10
         }}
-        
+
+
         >
           <button className='bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg text-white font-medium'>Browse Now</button>
           <button className='border border-white px-6 py-2 rounded-lg text-white font-medium hover:bg-amber-50 hover:text-gray-950'>See Details</button>
@@ -93,20 +95,62 @@ const Header = () => {
 <div className=" w-full flex items-center content-center">
 
       <div className=" w-full flex items-center mt-16 justify-between content-center text-center">
-        <div className="">
+        <motion.div className=""
+        
+        initial={{
+          opacity:0,
+        }}
+
+        animate={{
+          opacity:1,
+        }}
+
+        transition={{
+          duration:2,
+          delay:.5,
+        }}
+        >
           <h1 className=' text-3xl font-bold'>120K+</h1>
           <p>Deal Closed</p>
-        </div>
+        </motion.div>
         <span className='bg-gray-300 h-20 w-0.5 rounded-xl'></span>
-        <div className="">
+        <motion.div className=""
+             initial={{
+          opacity:0,
+        }}
+
+        animate={{
+          opacity:1,
+        }}
+
+        transition={{
+          duration:2,
+          delay:1,
+        }}
+        
+        >
           <h1 className=' text-3xl font-bold'>20K+</h1>
           <p>Customers</p>
-        </div>
+        </motion.div>
         <span className='bg-gray-300 h-20 w-0.5 rounded-xl'></span>
-        <div className="">
+        <motion.div className=""
+             initial={{
+          opacity:0,
+        }}
+
+        animate={{
+          opacity:1,
+        }}
+
+        transition={{
+          duration:2,
+          delay:1.5,
+        }}
+        
+        >
           <h1 className=' text-3xl font-bold'>1500K+</h1>
           <p>House Sold</p>
-        </div>
+        </motion.div>
       </div>
       </div>
     </div>
