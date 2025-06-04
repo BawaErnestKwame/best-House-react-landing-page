@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -9,6 +9,15 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
+  
+
+    const handleScroll = ()=>{
+        window.scroll(
+            0, 0,
+        )
+    }
+
+  
   return (
     <motion.div className='bg-gray-950 px-8 md:px-16 lg:px-24 text-white pt-16 pb-4'
 
@@ -147,7 +156,7 @@ const Footer = () => {
                     </div>
                 </motion.div>
 
-                <motion.div className=" h-12 w-12 hover:bg-amber-700 transition-colors bg-orange-600 rounded-full text-center items-center flex justify-center"
+                <motion.div className='h-12 w-12 hover:bg-amber-700 transition-colors bg-orange-600 rounded-full text-center items-center flex justify-center '
 
                 initial={{
                     opacity:0
@@ -160,8 +169,10 @@ const Footer = () => {
 
                 transition={{
                     duration:.8,
-                    delay:2,
+                    delay:.5,
                 }}
+
+                onClick={handleScroll}
                 
                 >
                     < ArrowUpwardIcon />
