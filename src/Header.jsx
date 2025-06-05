@@ -10,6 +10,7 @@ import InsightSection from './Components/InsightSection'
 import Accordion from './Components/Accordion'
 import TestimonialsSection from './Components/TestimonialsSection'
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom'
 
 
 
@@ -84,7 +85,7 @@ const Header = () => {
 
 
         >
-          <button className='bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg text-white font-medium'>Browse Now</button>
+         <Link to="./InsightSection"> <button className='bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg text-white font-medium' >Browse Now</button></Link>
           <button className='border border-white px-6 py-2 rounded-lg text-white font-medium hover:bg-amber-50 hover:text-gray-950'>See Details</button>
         </motion.div>
       </motion.div>
@@ -109,6 +110,8 @@ const Header = () => {
           duration:2,
           delay:.5,
         }}
+
+        viewport={{once:true}}
         >
           <h1 className=' text-3xl font-bold'>120K+</h1>
           <p>Deal Closed</p>
@@ -127,6 +130,7 @@ const Header = () => {
           duration:2,
           delay:1,
         }}
+         viewport={{once:true}}
         
         >
           <h1 className=' text-3xl font-bold'>20K+</h1>
@@ -146,6 +150,7 @@ const Header = () => {
           duration:2,
           delay:1.5,
         }}
+         viewport={{once:true}}
         
         >
           <h1 className=' text-3xl font-bold'>1500K+</h1>

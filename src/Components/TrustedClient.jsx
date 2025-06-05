@@ -31,7 +31,7 @@ const TrustedClient = () => {
       transition={{
         duration:0.8,
       }}
-    
+     viewport={{once:true}}
     >
 
       {/* our trusted-clients */}

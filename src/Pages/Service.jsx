@@ -1,5 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 import aboutimg from '../assets/aboutimg2.jpeg';
 import name1 from '../assets/team1.jpeg';
 import name2 from '../assets/team2.jpeg';
@@ -15,7 +19,7 @@ import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import EditDocumentIcon from '@mui/icons-material/EditDocument';
 import SensorOccupiedIcon from '@mui/icons-material/SensorOccupied';
 import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
-import house from '../assets/house4.jpeg'
+import house from '../assets/house4.jpeg';
 import LowPriorityIcon from '@mui/icons-material/LowPriority';
 import CalendarViewWeekIcon from '@mui/icons-material/CalendarViewWeek';
 import HailIcon from '@mui/icons-material/Hail';
@@ -307,71 +311,130 @@ const Service = () => {
         <h1 className="text-3xl font-bold text-blue-900 mb-6">
           Explore Your Options <br /> Find Your Perfect Match
         </h1>
-        <div className="flex overflow-x-scroll gap-6">
-          <motion.div className="min-w-[280px] shadow-lg rounded-lg overflow-hidden" variants={fadeIn} whileHover={{ scale: 1.05 }}>
-            <img src={house1} alt="Modern Apartment" className="w-full h-48 object-cover" />
-            <div className="p-4 text-left">
-              <h2 className="text-lg font-semibold mb-2">Modern Apartment</h2>
-              <p className="text-gray-600 text-sm">Perfect for city lovers—this sleek, centrally located apartment is great for professionals and couples.</p>
-            </div>
-          </motion.div>
+        <Swiper
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+          spaceBetween={24}
+          slidesPerView="auto"
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
+          }}
+        >
+          <SwiperSlide>
+            <motion.div
+              className="min-w-[280px] shadow-lg rounded-lg overflow-hidden"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src={house1} alt="Modern Apartment" className="w-full h-48 object-cover" />
+              <div className="p-4 text-left">
+                <h2 className="text-lg font-semibold mb-2">Modern Apartment</h2>
+                <p className="text-gray-600 text-sm">Perfect for city lovers—this sleek, centrally located apartment is great for professionals and couples.</p>
+              </div>
+            </motion.div>
+          </SwiperSlide>
 
-          <motion.div className="min-w-[280px] shadow-lg rounded-lg overflow-hidden" variants={fadeIn} whileHover={{ scale: 1.05 }}>
-            <img src={house2} alt="Family Home" className="w-full h-48 object-cover" />
-            <div className="p-4 text-left">
-              <h2 className="text-lg font-semibold mb-2">Spacious Family Home</h2>
-              <p className="text-gray-600 text-sm">A peaceful neighborhood, a big backyard, and room for everyone—ideal for growing families.</p>
-            </div>
-          </motion.div>
+          <SwiperSlide>
+            <motion.div
+              className="min-w-[280px] shadow-lg rounded-lg overflow-hidden"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src={house2} alt="Family Home" className="w-full h-48 object-cover" />
+              <div className="p-4 text-left">
+                <h2 className="text-lg font-semibold mb-2">Spacious Family Home</h2>
+                <p className="text-gray-600 text-sm">A peaceful neighborhood, a big backyard, and room for everyone—ideal for growing families.</p>
+              </div>
+            </motion.div>
+          </SwiperSlide>
 
-          <motion.div className="min-w-[280px] shadow-lg rounded-lg overflow-hidden" variants={fadeIn} whileHover={{ scale: 1.05 }}>
-            <img src={house3} alt="Commercial Space" className="w-full h-48 object-cover" />
-            <div className="p-4 text-left">
-              <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
-              <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
-            </div>
-          </motion.div>
+          <SwiperSlide>
+            <motion.div
+              className="min-w-[280px] shadow-lg rounded-lg overflow-hidden"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src={house3} alt="Commercial Space" className="w-full h-48 object-cover" />
+              <div className="p-4 text-left">
+                <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
+                <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
+              </div>
+            </motion.div>
+          </SwiperSlide>
 
-          <motion.div className="min-w-[280px] shadow-lg rounded-lg overflow-hidden" variants={fadeIn} whileHover={{ scale: 1.05 }}>
-            <img src={house4} alt="Commercial Space" className="w-full h-48 object-cover" />
-            <div className="p-4 text-left">
-              <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
-              <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
-            </div>
-          </motion.div>
+          <SwiperSlide>
+            <motion.div
+              className="min-w-[280px] shadow-lg rounded-lg overflow-hidden"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src={house4} alt="Commercial Space" className="w-full h-48 object-cover" />
+              <div className="p-4 text-left">
+                <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
+                <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
+              </div>
+            </motion.div>
+          </SwiperSlide>
 
-          <motion.div className="min-w-[280px] shadow-lg rounded-lg overflow-hidden" variants={fadeIn} whileHover={{ scale: 1.05 }}>
-            <img src={room1} alt="Commercial Space" className="w-full h-48 object-cover" />
-            <div className="p-4 text-left">
-              <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
-              <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
-            </div>
-          </motion.div>
+          <SwiperSlide>
+            <motion.div
+              className="min-w-[280px] shadow-lg rounded-lg overflow-hidden"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src={room1} alt="Commercial Space" className="w-full h-48 object-cover" />
+              <div className="p-4 text-left">
+                <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
+                <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
+              </div>
+            </motion.div>
+          </SwiperSlide>
 
-          <motion.div className="min-w-[280px] shadow-lg rounded-lg overflow-hidden" variants={fadeIn} whileHover={{ scale: 1.05 }}>
-            <img src={room2} alt="Commercial Space" className="w-full h-48 object-cover" />
-            <div className="p-4 text-left">
-              <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
-              <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
-            </div>
-          </motion.div>
+          <SwiperSlide>
+            <motion.div
+              className="min-w-[280px] shadow-lg rounded-lg overflow-hidden"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src={room2} alt="Commercial Space" className="w-full h-48 object-cover" />
+              <div className="p-4 text-left">
+                <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
+                <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
+              </div>
+            </motion.div>
+          </SwiperSlide>
 
-          <motion.div className="min-w-[280px] shadow-lg rounded-lg overflow-hidden" variants={fadeIn} whileHover={{ scale: 1.05 }}>
-            <img src={room3} alt="Commercial Space" className="w-full h-48 object-cover" />
-            <div className="p-4 text-left">
-              <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
-              <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
-            </div>
-          </motion.div>
+          <SwiperSlide>
+            <motion.div
+              className="min-w-[280px] shadow-lg rounded-lg overflow-hidden"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src={room3} alt="Commercial Space" className="w-full h-48 object-cover" />
+              <div className="p-4 text-left">
+                <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
+                <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
+              </div>
+            </motion.div>
+          </SwiperSlide>
 
-          <motion.div className="min-w-[280px] shadow-lg rounded-lg overflow-hidden" variants={fadeIn} whileHover={{ scale: 1.05 }}>
-            <img src={room4} alt="Commercial Space" className="w-full h-48 object-cover" />
-            <div className="p-4 text-left">
-              <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
-              <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
-            </div>
-          </motion.div>
-        </div>
+          <SwiperSlide>
+            <motion.div
+              className="min-w-[280px] shadow-lg rounded-lg overflow-hidden"
+              variants={fadeIn}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src={room4} alt="Commercial Space" className="w-full h-48 object-cover" />
+              <div className="p-4 text-left">
+                <h2 className="text-lg font-semibold mb-2">Commercial Space</h2>
+                <p className="text-gray-600 text-sm">Boost your business with this strategically located commercial space equipped with modern facilities.</p>
+              </div>
+            </motion.div>
+          </SwiperSlide>
+        </Swiper>
       </motion.div>
 
       <motion.div

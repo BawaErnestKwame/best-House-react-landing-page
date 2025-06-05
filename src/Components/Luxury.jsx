@@ -19,6 +19,7 @@ const Luxury = () => {
       transition={{
         duration:0.8,
       }}
+       viewport={{once:true}}
       
       >
         
@@ -57,6 +58,8 @@ const Luxury = () => {
                   transition={{
                     duration:0.8,
                   }}
+                  
+                   viewport={{once:true}}
           
           >
             <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-medium transition">

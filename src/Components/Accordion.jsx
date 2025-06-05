@@ -26,6 +26,7 @@ const Accordion = () => {
         transition={{
         duration: 1
          }}
+          viewport={{once:true}}
       
       
       >

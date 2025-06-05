@@ -20,6 +20,8 @@ const ExpectGuides = () => {
         transition={{
         duration: .8
          }}
+         
+          viewport={{once:true}}
         
         >
             <h2 className=' text-2xl mb-8 font-bold w-80 text-center '>Expect Guides To Find Your Perfect Fit </h2>
@@ -43,6 +45,8 @@ const ExpectGuides = () => {
                   duration:.5,
                   delay:1.5
                 }}
+
+                 viewport={{once:true}}
                 
                 >
                     <HouseIcon className='size-16 text-orange-500 '/>
@@ -56,8 +60,6 @@ const ExpectGuides = () => {
       
                 }}
 
-           
-
                 whileInView={{
                   opacity:1, x:0,
                
@@ -68,6 +70,8 @@ const ExpectGuides = () => {
                   duration:.5,
                   delay:1
                 }}
+
+                 viewport={{once:true}}
 
                 
                 
@@ -96,6 +100,8 @@ const ExpectGuides = () => {
                   duration:.5,
                   delay:.5
                 }}
+
+                 viewport={{once:true}}
                 
                 >
                     <PercentIcon className='size-16 text-orange-500 '/>

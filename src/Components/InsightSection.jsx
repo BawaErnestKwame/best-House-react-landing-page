@@ -23,7 +23,7 @@ const InsightSection = () => {
           type:"spring",
           stiffness:60, 
           damping:10
-         }}>
+         }} id='InsightSection'>
 
 
         <h2 className=' text-orange-500 font-bold underline'>INSIGHT</h2>

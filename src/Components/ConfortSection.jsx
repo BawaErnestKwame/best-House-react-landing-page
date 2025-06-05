@@ -17,7 +17,11 @@ const ConfortSection = () => {
 
         transition={{
         duration: .8
-         }}>
+         }}
+
+          viewport={{once:true}}
+         
+         >
         
   
 
@@ -34,6 +38,8 @@ const ConfortSection = () => {
         transition={{
         duration: .8
          }}
+
+          viewport={{once:true}}
         
         >
           <h2 className="text-orange-600 font-semibold tracking-wide"> EXTREME COMFORT</h2>
@@ -55,6 +61,8 @@ const ConfortSection = () => {
         whileInView={{
         opacity:1, y:0,
         }}
+
+         viewport={{once:true}}
 
         transition={{
         duration: 1
