@@ -33,8 +33,24 @@ import room2 from '../assets/room10.jpeg';
 import room3 from '../assets/roo11.jpeg';
 import room4 from '../assets/room12.jpeg';
 import board from '../assets/board1.jpeg';
+import Model from "../Components/Model";
+import { useState } from 'react';
 
-const Service = () => {
+
+
+
+
+const Service = ({isOpen}) => {
+    const[isModelOpen ,setIsModelOpen] = useState(false)
+  
+     const openModel = ()=>{
+      setIsModelOpen(true)
+  
+     }
+  
+     const closemodel =()=>{
+      setIsModelOpen(false)
+     }
   // Animation variants
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -292,14 +308,24 @@ const Service = () => {
         <p className="text-gray-600 max-w-2xl mx-auto">
           Are you passionate about real estate and helping people find their dream homes? Become a part of EstateHouse and work with a team of professionals committed to excellence, integrity, and innovation.
         </p>
+
+
+        {/* apply button  */}
+
+
         <motion.button
-          className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-lg transition duration-300"
+          className={`mt-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-lg transition duration-300 ${isOpen ? "hidden" : ""}`}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-        >
+        onClick={openModel} >
           Apply Now
         </motion.button>
+       
+
+
       </motion.div>
+
+        <Model isOpen={isModelOpen} onClose={closemodel}/>
 
       <motion.div
         className="px-4 md:px-16 lg:px-24 py-12 text-center bg-white mt-12"

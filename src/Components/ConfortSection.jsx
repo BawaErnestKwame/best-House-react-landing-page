@@ -1,6 +1,7 @@
 import React from 'react';
 import house from '../assets/house7.jpeg';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const ConfortSection = () => {
   return (
@@ -67,12 +68,12 @@ const ConfortSection = () => {
         transition={{
         duration: 1
          }}>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-medium transition">
+           <Link to='/service' > <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-medium transition">
               Browse Now
-            </button>
-            <button className="border border-gray-300 text-orange-500 px-6 py-2 rounded-md font-medium hover:bg-amber-50 hover:text-gray-900 transition">
-              See Details
-            </button>
+            </button></Link>
+          <Link to='/contact'>  <button className="border border-gray-300 text-orange-500 px-6 py-2 rounded-md font-medium hover:bg-amber-50 hover:text-gray-900 transition">
+              Contact Us
+            </button></Link>
           </motion.div>
         </motion.div>
 

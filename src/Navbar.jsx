@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import ListIcon from '@mui/icons-material/List';
 import CloseIcon from '@mui/icons-material/Close';
 import Model from './Components/Model';
@@ -28,9 +28,9 @@ const Navbar = () => {
       <nav className='w-full h-16 px-6 md:px-24 flex justify-between items-center bg-blue-950 fixed top-0 z-50 tracking-[0.05em]'>
 
         {/* Logo */}
-        <div className="text-white font-bold text-xl cursor-pointer">
+      <Link to='/'>  <div className="text-white font-bold text-xl cursor-pointer">
           ESTATE<span className='text-orange-500'>HOUSE</span>
-        </div>
+        </div></Link>
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex gap-8 text-white text-sm'>

@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const Header = () => {
+const Header = ({isOpen}) => {
 
   const fadeIn ={
     hidden:{opacity: 0 , y:-800},
@@ -85,8 +85,8 @@ const Header = () => {
 
 
         >
-         <Link to="./InsightSection"> <button className='bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg text-white font-medium' >Browse Now</button></Link>
-          <button className='border border-white px-6 py-2 rounded-lg text-white font-medium hover:bg-amber-50 hover:text-gray-950'>See Details</button>
+         <Link to="./service"> <button className='bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg text-white font-medium' >Browse Now</button></Link>
+        <Link to='/contact'>  <button className='border border-white px-6 py-2 rounded-lg text-white font-medium hover:bg-amber-50 hover:text-gray-950'>Contact Us</button></Link>
         </motion.div>
       </motion.div>
 
