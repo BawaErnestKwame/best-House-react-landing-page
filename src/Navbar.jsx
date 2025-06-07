@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='w-full h-16 px-6 md:px-24 flex justify-between items-center bg-blue-950 fixed top-0 z-50 tracking-[0.05em]'>
+      <nav className='w-full h-16 px-6  md:px-8 lg:px-24 flex justify-between items-center bg-blue-950 fixed top-0 z-50 tracking-[0.05em]'>
 
         {/* Logo */}
       <Link to='/'>  <div className="text-white font-bold text-xl cursor-pointer">

@@ -24,7 +24,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <div className="px-8 md:px-16 lg:px-24 mt-12 mb-12">
+    <div className="px-4 md:px-8 lg:px-24 mt-12 mb-12">
       <h2 className="text-orange-400 font-bold underline text-center">TESTIMONIAL</h2>
       <h1 className="font-bold text-2xl text-center mb-8 mt-4">
         Hear From Your Neighbors, <br /> Why They Chose Us!

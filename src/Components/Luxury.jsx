@@ -7,7 +7,7 @@ const Luxury = () => {
   return (
     <>
       {/* Ultimate Luxury Section */}
-      <motion.div className="flex flex-col md:flex-row items-center gap-12 px-4 md:px-16 lg:px-24 mt-32 mb-20"
+      <motion.div className="flex flex-col md:flex-row items-center gap-12 px-4 md:px-8 lg:px-24 mt-32 mb-20"
       initial={{
         opacity:0, y:100,
       }}

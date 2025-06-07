@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 
 const InsightSection = () => {
   return (
-    <motion.div className=' flex w-full px-8 md:px-16 lg:px-24 items-center overflow-hidden flex-col mb-10 pt-15'
+    <motion.div className=' flex w-full px-4 md:px-8 lg:px-24 items-center overflow-hidden flex-col mb-10 pt-15'
     
                 initial={{
         opacity:0, x:-200,
