@@ -24,7 +24,7 @@ const Header = ({isOpen}) => {
 
     <>
 <div
-  className="w-full h-screen bg-cover bg-center text-white px-4 sm:px-8 lg:px-24 pt-12 md:pt-16 lg:pt-24 relative"
+  className="w-full h-screen md:h-auto lg:h-screen bg-cover bg-center text-white px-4 sm:px-8 lg:px-24 pt-12 md:pt-16 lg:pt-24 relative"
   style={{
     backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(${header})`,
     backgroundSize: 'cover',
@@ -57,9 +57,8 @@ const Header = ({isOpen}) => {
         }}
         
         >
-        <h1 className=" text-3xl md:text-5xl font-bold mb-4 leading-15">
-          EXCEPTIONAL HOMES FOR<br />
-          EXCEPTIONAL LIVES <span className=' animate-pulse'>🏡</span>
+        <h1 className=" text-3xl md:text-5xl font-bold leading-12 mb-4 md:leading-15">
+          EXCEPTIONAL HOMES FOR<br/>EXCEPTIONAL LIVES <span className=' animate-pulse'>🏡</span>
         </h1>
         <p className="text-lg max-w-xl mb-8">
           Discover your dream with our easy-to-use real estate platform.

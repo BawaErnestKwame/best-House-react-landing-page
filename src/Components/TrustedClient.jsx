@@ -37,7 +37,7 @@ const TrustedClient = () => {
       {/* our trusted-clients */}
         <div className=" flex flex-col items-center">
             <h2 className='text-orange-500 font-bold text-sm items-center'>CLIENTS</h2>
-             <h1 className=' text-3xl text-gray-950 font-semibold'>Trusted By Our Beloved Clients</h1>
+             <h1 className=' text-3xl text-center text-gray-950 font-semibold'>Trusted By Our Beloved Clients</h1>
         </div>
 
         <div className=" flex before_after">

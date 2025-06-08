@@ -37,7 +37,7 @@ const Footer = () => {
     
     >
         <div className=" flex justify-between flex-wrap gap-4">
-            <motion.div className="md:w-1/3 lg:w-1/3 w-full"
+            <motion.div className="md:w-1/2 lg:w-1/3 w-full"
                initial={{
                 opacity:0, x:-200,
                 }}

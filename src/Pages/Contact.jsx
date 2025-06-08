@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 const Contact = () => {
   return (
     <>
-<motion.div className='w-full h-[40vh] mt-10 px-4 md:px-8 lg:px-24 flex items-center justify-center text-center'
+<motion.div className='w-full h-[40vh] mt-16 py-16 px-4 md:px-8 lg:px-24 flex items-center justify-center text-center'
   style={{
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(${contact})`,
     backgroundSize: 'cover',
