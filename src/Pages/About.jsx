@@ -14,7 +14,7 @@ const About = () => {
   return (
     <>
       <motion.div
-        className="w-full mt-16 py-12 px-4 md:px-8 lg:px-24 h-[40vh]  flex items-center justify-center text-center"
+        className="w-full mt-16 py-12 px-4 md:px-8 lg:px-24 h-[40vh] md:h-auto flex items-center justify-center text-center"
         style={{
           backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(${aboutimg})`,
           backgroundSize: 'cover',
