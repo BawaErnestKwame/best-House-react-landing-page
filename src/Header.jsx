@@ -24,7 +24,7 @@ const Header = ({isOpen}) => {
 
     <>
 <div
-  className="w-full h-screen md:h-auto lg:h-screen bg-cover bg-center text-white px-4 sm:px-8 lg:px-24 pt-12 md:pt-16 lg:pt-24 relative"
+  className="w-full h-screen md:h-auto lg:h-screen bg-cover bg-center text-white px-4 sm:px-8 lg:px-24 pt-12 md:pt-16 lg:pt-24 relative pb-10"
   style={{
     backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(${header})`,
     backgroundSize: 'cover',
